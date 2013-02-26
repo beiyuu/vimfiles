@@ -1,0 +1,40 @@
+# Global snippets
+
+# (c) holds no legal value ;)
+
+snippet $ajax
+	$.ajax({
+		type: 'POST'
+		,url: '${1}'
+		,data: {
+			ck: ck
+			${2}
+		}
+		,success: function(data) {
+			if(data.r){
+				${3}
+			}else{
+				${4}
+			}
+		}
+	}); 
+endsnippet
+
+snippet $dele
+	$('body').delegate('${1:element}','${2:event}',function(e){ 
+		${3}
+	});
+endsnippet
+
+snippet bjs
+	<%block filter="collect_js">
+		${1}
+	</%block>
+endsnippet
+
+snippet bcs
+	<%block filter="collect_css">
+		${1}
+	</%block>
+endsnippet
+
