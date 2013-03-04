@@ -85,8 +85,11 @@ nnoremap <leader>v v`]                     "使用,v来选择刚刚复制的段�
 nnoremap <leader>w <c-w>v<c-w>l            "使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
 nnoremap <leader>wc <c-w>c
 nnoremap <leader>ww <c-w>w
-nnoremap <leader>t gt                      "向前tab切换
-nnoremap <leader>r gT                      "向后tab切换
+
+"向前tab切换
+nnoremap <leader>t gt
+"向后tab切换
+nnoremap <leader>r gT
 nnoremap <leader><space> :noh<cr>          "使用<leader>空格来取消搜索高亮
 
 nmap <leader>h I//jj                       "html中的js加注释 取消注释
