@@ -25,9 +25,9 @@ set softtabstop=4
 set expandtab
 "}
 
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1          "字符设置
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set scrolloff=3
-set fenc=utf-8          "新建文件编码
+set fenc=utf-8
 set autoindent
 set hidden
 "set encoding=utf-8
@@ -66,9 +66,9 @@ inoremap <c-h> <left>
 "===================================================
 "修改leader键为逗号
 let mapleader=","
-imap jj <esc>                              "esc的映射
+imap jj <esc>
 
-inoremap <F1> <ESC>                        "屏蔽掉讨厌的F1键
+inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
@@ -80,22 +80,29 @@ vnoremap / /\v
 nnoremap <tab> %
 vnoremap <tab> %
 
-nnoremap <leader>ft vatzf                  "折叠html标签 ,fold tag
-nnoremap <leader>v v`]                     "使用,v来选择刚刚复制的段落，这样可以用来缩进
-nnoremap <leader>w <c-w>v<c-w>l            "使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
+"折叠html标签 ,fold tag
+nnoremap <leader>ft vatzf
+"使用,v来选择刚刚复制的段落，这样可以用来缩进
+nnoremap <leader>v v`]
+
+"使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
+nnoremap <leader>w <c-w>v<c-w>l
 nnoremap <leader>wc <c-w>c
 nnoremap <leader>ww <c-w>w
 
-"向前tab切换
+"tab切换
 nnoremap <leader>t gt
-"向后tab切换
 nnoremap <leader>r gT
-nnoremap <leader><space> :noh<cr>          "使用<leader>空格来取消搜索高亮
+"使用<leader>空格来取消搜索高亮
+nnoremap <leader><space> :noh<cr>
 
-nmap <leader>h I//jj                       "html中的js加注释 取消注释
+"html中的js加注释 取消注释
+nmap <leader>h I//jj
 nmap <leader>ch ^xx
-nmap <leader>q :execute "cd" expand("%:h")<CR> "切换到当前目录
-nmap <leader>s :,s///c "搜索替换
+"切换到当前目录
+nmap <leader>q :execute "cd" expand("%:h")<CR>
+"搜索替换
+nmap <leader>s :,s///c
 
 "取消粘贴缩进
 nmap <leader>p :set paste<CR>
@@ -154,7 +161,8 @@ let g:EasyMotion_leader_key = '<Leader><Leader>'
 "let g:fencview_autodetect=1
 
 Bundle 'The-NERD-tree'
-nmap <leader>nt :NERDTree<cr>:set rnu<cr>  "设置相对行号
+"设置相对行号
+nmap <leader>nt :NERDTree<cr>:set rnu<cr>
 let NERDTreeShowBookmarks=1
 let NERDTreeShowFiles=1
 let NERDTreeShowHidden=1
