@@ -32,7 +32,7 @@ set autoindent
 set hidden
 "set encoding=utf-8
 
-set laststatus=2
+"set laststatus=2
 "set number                                    "显示行号
 "set undofile                                  "无限undo
 "set nowrap                                    "禁止自动换行
