@@ -146,15 +146,16 @@ Bundle 'ctrlp.vim'
 Bundle 'AutoClose'
 Bundle 'ZenCoding.vim'
 Bundle 'matchit.zip'
-Bundle 'ShowTrailingWhitespace'
 Bundle 'Tabular'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'spiiph/vim-space'
+Bundle 'trailing-whitespace'
 
 Bundle '_jsbeautify'
-nnoremap <leader>_ff :call g:Jsbeautify()<CR>  
+nnoremap <leader>_ff :call g:Jsbeautify()<CR>
 
 Bundle 'EasyMotion'
-let g:EasyMotion_leader_key = '<Leader><Leader>' 
+let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 "Fencview的初始设置
 "Bundle 'FencView.vim'
