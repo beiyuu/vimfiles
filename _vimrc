@@ -148,7 +148,7 @@ Bundle 'ZenCoding.vim'
 Bundle 'matchit.zip'
 Bundle 'Tabular'
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'spiiph/vim-space'
+"Bundle 'spiiph/vim-space'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'trailing-whitespace'
 
