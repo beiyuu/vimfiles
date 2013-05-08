@@ -38,10 +38,14 @@ set hidden
 "set nowrap                                    "禁止自动换行
 "autocmd! bufwritepost _vimrc source %         "自动载入配置文件不需要重启
 
-set relativenumber                             "相对行号 要想相对行号起作用要放在显示行号后面
-set wrap                                       "自动换行
-set guifont=Inconsolata:h12                    "GUI界面里的字体，默认有抗锯齿
-set isk+=-                                     "将-连接符也设置为单词
+"相对行号 要想相对行号起作用要放在显示行号后面
+set relativenumber
+"自动换行
+set wrap
+"GUI界面里的字体，默认有抗锯齿
+set guifont=Inconsolata:h12
+"将-连接符也设置为单词
+set isk+=-
 
 set ignorecase "设置大小写敏感和聪明感知(小写全搜，大写完全匹配)
 set smartcase
