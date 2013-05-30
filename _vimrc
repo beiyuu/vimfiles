@@ -43,7 +43,7 @@ set relativenumber
 "自动换行
 set wrap
 "GUI界面里的字体，默认有抗锯齿
-set guifont=Inconsolata:h12
+set guifont=Inconsolata:h15
 "将-连接符也设置为单词
 set isk+=-
 
