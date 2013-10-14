@@ -19,9 +19,9 @@ let g:solarized_visibility = "high"
 "}
 
 "tab setting {
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 "}
 
@@ -143,8 +143,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'ctrlp.vim'
-Bundle 'AutoClose'
 Bundle 'ZenCoding.vim'
+Bundle 'Auto-Pairs'
 Bundle 'matchit.zip'
 Bundle 'Tabular'
 Bundle 'Valloric/YouCompleteMe'
