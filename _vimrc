@@ -43,7 +43,7 @@ set relativenumber
 "自动换行
 set wrap
 "GUI界面里的字体，默认有抗锯齿
-set guifont=Inconsolata:h15
+set guifont=Inconsolata:h12
 "将-连接符也设置为单词
 set isk+=-
 
@@ -143,7 +143,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'ctrlp.vim'
-Bundle 'ZenCoding.vim'
+let g:ctrlp_cmd = 'CtrlPMRU'
+
+Bundle 'Emmet.vim'
 Bundle 'Auto-Pairs'
 Bundle 'matchit.zip'
 Bundle 'Tabular'
