@@ -138,54 +138,54 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
-" required!
 Bundle 'gmarik/vundle'
-
-Bundle 'ctrlp.vim'
-let g:ctrlp_cmd = 'CtrlPMRU'
-
 Bundle 'Emmet.vim'
 Bundle 'Auto-Pairs'
 Bundle 'matchit.zip'
 Bundle 'Tabular'
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'terryma/vim-multiple-cursors'
 Bundle 'trailing-whitespace'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle "pangloss/vim-javascript"
+Bundle "othree/html5.vim"
+Bundle "ayang/AutoComplPop"
+Bundle "ervandew/supertab"
+  let g:SuperTabDefaultCompletionType = "<c-n>"
 
-Bundle 'nathanaelkane/vim-indent-guides'
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_guide_size=1
-
-Bundle '_jsbeautify'
-nnoremap <leader>_ff :call g:Jsbeautify()<CR>
+Bundle 'ctrlp.vim'
+  let g:ctrlp_cmd = 'CtrlPMRU'
 
 Bundle 'EasyMotion'
-let g:EasyMotion_leader_key = '<Leader><Leader>'
-
-"Fencview的初始设置
-"Bundle 'FencView.vim'
-"let g:fencview_autodetect=1
+  let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 Bundle 'The-NERD-tree'
-"设置相对行号
-nmap <leader>nt :NERDTree<cr>:set rnu<cr>
-let NERDTreeShowBookmarks=1
-let NERDTreeShowFiles=1
-let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.$','\~$']
-let NERDTreeShowLineNumbers=1
-let NERDTreeWinPos=1
+  "设置相对行号
+  nmap <leader>nt :NERDTree<cr>:set rnu<cr>
+  let NERDTreeShowBookmarks=1
+  let NERDTreeShowFiles=1
+  let NERDTreeShowHidden=1
+  let NERDTreeIgnore=['\.$','\~$']
+  let NERDTreeShowLineNumbers=1
+  let NERDTreeWinPos=1
 
 Bundle 'The-NERD-Commenter'
-let NERDShutUp=1
-"支持单行和多行的选择，//格式
-map <c-h> ,c<space>
+  let NERDShutUp=1
+  "支持单行和多行的选择，//格式
+  map <c-h> ,c<space>
 
 Bundle 'UltiSnips'
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+  let g:UltiSnipsExpandTrigger="<c-j>"
+  let g:UltiSnipsJumpForwardTrigger="<c-j>"
+  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"Bundle 'FencView.vim'
+  "let g:fencview_autodetect=1
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'terryma/vim-multiple-cursors'
+"Bundle '_jsbeautify'
+  "nnoremap <leader>_ff :call g:Jsbeautify()<CR>
+"Bundle 'nathanaelkane/vim-indent-guides'
+  "let g:indent_guides_enable_on_vim_startup=1
+  "let g:indent_guides_guide_size=1
 
 "}
 
