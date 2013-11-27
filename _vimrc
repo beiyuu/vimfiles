@@ -10,12 +10,7 @@ set cursorcolumn             "光标垂直高亮
 set ttyfast
 set ruler
 set backspace=indent,eol,start
-colorscheme solarized
 
-let g:solarized_termtrans  = 1
-let g:solarized_termcolors = 256
-let g:solarized_contrast   = "high"
-let g:solarized_visibility = "high"
 "}
 
 "tab setting {
@@ -149,6 +144,14 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/html5.vim"
 Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
+
+Bundle "Solarized"
+  colorscheme solarized
+  let g:solarized_termtrans  = 1
+  let g:solarized_termcolors = 256
+  let g:solarized_contrast   = "high"
+  let g:solarized_visibility = "high"
+
 Bundle "ervandew/supertab"
   let g:SuperTabDefaultCompletionType = "<c-n>"
 
