@@ -115,7 +115,7 @@ nmap <leader>pp :set nopaste<CR>
 "文件类型切换
 nmap <leader>fj :set ft=javascript<CR>
 nmap <leader>fc :set ft=css<CR>
-nmap <leader>fx :set ft=xml<CR>
+nmap <leader>fh :set ft=html<CR>
 nmap <leader>fm :set ft=mako<CR>
 
 "设置隐藏gvim的菜单和工具栏 F2切换
@@ -147,6 +147,7 @@ Bundle 'trailing-whitespace'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle "pangloss/vim-javascript"
 Bundle "othree/html5.vim"
+Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
 Bundle "ervandew/supertab"
   let g:SuperTabDefaultCompletionType = "<c-n>"
