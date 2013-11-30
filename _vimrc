@@ -144,6 +144,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/html5.vim"
 Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
+Bundle "vim-scripts/jinja--Yang"
 
 Bundle "Solarized"
   colorscheme solarized
@@ -192,6 +193,7 @@ Bundle 'UltiSnips'
   "let g:indent_guides_guide_size=1
 
 "}
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 "放置在Bundle的设置后，防止意外BUG
 filetype plugin indent on
