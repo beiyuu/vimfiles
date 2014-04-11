@@ -25,6 +25,7 @@ set scrolloff=3
 set fenc=utf-8
 set autoindent
 set hidden
+set noswapfile
 "set encoding=utf-8
 
 "set laststatus=2
