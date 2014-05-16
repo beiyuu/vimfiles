@@ -18,6 +18,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
 "}
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
@@ -68,10 +69,6 @@ inoremap <c-h> <left>
 let mapleader=","
 imap jj <esc>
 
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-
 "修改vim的正则表达
 nnoremap / /\v
 vnoremap / /\v
@@ -121,14 +118,6 @@ set guioptions-=T
 set go-=r
 set go-=L
 
-map <silent> <F2> :if &guioptions =~# 'T' <Bar>
-        \set guioptions-=T <Bar>
-        \set guioptions-=m <bar>
-    \else <Bar>
-        \set guioptions+=T <Bar>
-        \set guioptions+=m <Bar>
-    \endif<CR>
-
 
 "Vundle Settings {
 set rtp+=~/.vim/bundle/vundle/
@@ -138,14 +127,16 @@ Bundle 'gmarik/vundle'
 Bundle 'Emmet.vim'
 Bundle 'Auto-Pairs'
 Bundle 'matchit.zip'
-Bundle 'Tabular'
 Bundle 'trailing-whitespace'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle "pangloss/vim-javascript"
 Bundle "othree/html5.vim"
 Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
-Bundle "vim-scripts/jinja--Yang"
+
+Bundle 'junegunn/vim-easy-align'
+  vmap <Enter> <Plug>(EasyAlign)
+  nmap <Leader>a <Plug>(EasyAlign)
 
 Bundle "Solarized"
   colorscheme solarized
@@ -194,7 +185,6 @@ Bundle 'UltiSnips'
   "let g:indent_guides_guide_size=1
 
 "}
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 "放置在Bundle的设置后，防止意外BUG
 filetype plugin indent on
