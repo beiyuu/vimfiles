@@ -9,6 +9,6 @@
 
 更多插件：http://vim-scripts.org/vim/scripts.html
 
-我用了YouCompleteMe自动补全插件，安装稍有些麻烦，可参看官方指南：http://valloric.github.com/YouCompleteMe/
+<del>我用了YouCompleteMe自动补全插件，安装稍有些麻烦，可参看官方指南：http://valloric.github.com/YouCompleteMe/</del>
 
 也可参考我的博客：[Git时代的VIM不完全使用教程](http://beiyuu.com/git-vim-tutorial/ "Git时代的VIM不完全使用教程")
