@@ -133,6 +133,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "othree/html5.vim"
 Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
+Bundle "wavded/vim-stylus"
 
 Bundle 'junegunn/vim-easy-align'
   vmap <Enter> <Plug>(EasyAlign)
