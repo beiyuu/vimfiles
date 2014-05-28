@@ -59,10 +59,10 @@ set numberwidth=4          "行号栏的宽度
 set whichwrap=b,s,<,>,[,]  "让退格，空格，上下箭头遇到行首行尾时自动移到下一行（包括insert模式）
 
 "插入模式下移动
-inoremap <c-j> <down>
-inoremap <c-k> <up>
-inoremap <c-l> <right>
-inoremap <c-h> <left>
+imap <c-j> <down>
+imap <c-k> <up>
+imap <c-l> <right>
+imap <c-h> <left>
 
 "===================================================
 "修改leader键为逗号
@@ -70,12 +70,12 @@ let mapleader=","
 imap jj <esc>
 
 "修改vim的正则表达
-nnoremap / /\v
-vnoremap / /\v
+nmap / /\v
+vmap / /\v
 
 "使用tab键来代替%进行匹配跳转
-nnoremap <tab> %
-vnoremap <tab> %
+nmap <tab> %
+vmap <tab> %
 
 "折叠html标签 ,fold tag
 nnoremap <leader>ft vatzf
@@ -83,15 +83,19 @@ nnoremap <leader>ft vatzf
 nnoremap <leader>v v`]
 
 "使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
-nnoremap <leader>w <c-w>v<c-w>l
-nnoremap <leader>wc <c-w>c
-nnoremap <leader>ww <c-w>w
+nmap <leader>w <c-w>v<c-w>l
+nmap <leader>wc <c-w>c
+nmap <leader>ww <c-w>w
 
 "tab切换
-nnoremap <leader>t gt
-nnoremap <leader>r gT
-"使用<leader>空格来取消搜索高亮
-nnoremap <leader><space> :noh<cr>
+nmap <leader>t gt
+nmap <leader>r gT
+
+"<leader>空格快速保存
+nmap <leader><space> :w<cr>
+
+"取消搜索高亮
+nmap <leader>n :noh<cr>
 
 "html中的js加注释 取消注释
 nmap <leader>h I//jj
