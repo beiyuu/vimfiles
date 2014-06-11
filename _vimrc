@@ -155,6 +155,7 @@ Bundle "ervandew/supertab"
 
 Bundle 'ctrlp.vim'
   let g:ctrlp_cmd = 'CtrlPMRU'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|site_packages\|venv'
 
 Bundle 'EasyMotion'
   let g:EasyMotion_leader_key = '<Leader><Leader>'
