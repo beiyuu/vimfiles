@@ -20,9 +20,10 @@ $.ajax({
 });
 endsnippet
 
-snippet $dele
-$('body').delegate('${1:element}','${2:event}',function(e){
-  ${3}
+snippet $on
+$('${1}').on('${2:event}', '${3:element}', function(e){
+	e.preventDefault();
+  ${4}
 });
 endsnippet
 
