@@ -27,6 +27,7 @@ set fenc=utf-8
 set autoindent
 set hidden
 set noswapfile
+set nowritebackup
 "set encoding=utf-8
 
 "set laststatus=2
@@ -128,7 +129,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'Emmet.vim'
+Bundle "mattn/emmet-vim"
 Bundle 'Auto-Pairs'
 Bundle 'matchit.zip'
 Bundle 'trailing-whitespace'
