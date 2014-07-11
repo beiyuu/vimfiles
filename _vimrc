@@ -139,6 +139,7 @@ Bundle "othree/html5.vim"
 Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
 Bundle "wavded/vim-stylus"
+Bundle "mxw/vim-jsx"
 
 Bundle 'junegunn/vim-easy-align'
   vmap <Enter> <Plug>(EasyAlign)
@@ -158,8 +159,13 @@ Bundle 'ctrlp.vim'
   let g:ctrlp_cmd = 'CtrlPMRU'
   let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|site_packages\|venv'
 
-Bundle 'EasyMotion'
-  let g:EasyMotion_leader_key = '<Leader><Leader>'
+Bundle 'Lokaltog/vim-easymotion'
+  let g:EasyMotion_smartcase = 0
+  let g:EasyMotion_do_mapping = 0 " Disable default mappings
+  nmap s <Plug>(easymotion-s)
+  nmap S <Plug>(easymotion-s2)
+  map <Leader>j <Plug>(easymotion-j)
+  map <Leader>k <Plug>(easymotion-k)
 
 Bundle 'The-NERD-tree'
   "设置相对行号
