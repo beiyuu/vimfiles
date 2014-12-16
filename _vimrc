@@ -115,6 +115,7 @@ nmap <leader>fj :set ft=javascript<CR>
 nmap <leader>fc :set ft=css<CR>
 nmap <leader>fh :set ft=html<CR>
 nmap <leader>fm :set ft=mako<CR>
+nmap <leader>fs :set ft=swig<CR>
 
 "设置隐藏gvim的菜单和工具栏 F2切换
 set guioptions-=m
@@ -140,6 +141,7 @@ Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
 Bundle "wavded/vim-stylus"
 Bundle "mxw/vim-jsx"
+Bundle "brettof86/vim-swigjs"
 
 Bundle 'junegunn/vim-easy-align'
   vmap <Enter> <Plug>(EasyAlign)
