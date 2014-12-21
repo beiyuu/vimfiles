@@ -104,7 +104,7 @@ nmap <leader>ch ^xx
 "切换到当前目录
 nmap <leader>q :execute "cd" expand("%:h")<CR>
 "搜索替换
-nmap <leader>s :,s///c
+nmap <leader>s :1,%s///cg<left><left><left><left>
 
 "取消粘贴缩进
 nmap <leader>p :set paste<CR>

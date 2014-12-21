@@ -4,27 +4,26 @@
 
 snippet $ajax
 $.ajax({
-  type: 'POST'
-  ,url: '${1}'
-  ,data: {
-    ck: ck
-    ${2}
-  }
-  ,success: function(data) {
-    if(data.r){
-      ${3}
-    }else{
-      ${4}
-    }
-  }
-});
+	type: 'POST',
+	url: '${1}',
+	data: {
+		${2}
+	}
+}).done(function(data) {
+	if(data.r){
+		${3}
+	}else{
+		${4}
+	}
+}).fail(function() {
+	${5}
+})
 endsnippet
 
 snippet $on
 $('${1}').on('${2:event}', '${3:element}', function(e){
-	e.preventDefault();
   ${4}
-});
+})
 endsnippet
 
 snippet bjs
@@ -41,4 +40,34 @@ endsnippet
 
 snippet log
 console.log(${1})
+endsnippet
+
+snippet req "require" b
+var `!p
+def formatVariableName(path):
+	lastPart = path.split('/')[-1]
+	if lastPart == 'underscore':
+		return '_'
+	elif lastPart == 'jquery':
+		return '$'
+	else:
+		return re.sub(r'[_\-]', '', lastPart.title())
+snip.rv = formatVariableName(t[1])
+` = require('${1}')$0
+endsnippet
+
+snippet me "module.exports" b
+module.exports = ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`}$0
+endsnippet
+
+snippet cc "createClass" b
+var ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`} = React.createClass({
+	render: function() {
+		return (
+			$0
+		)
+	}
+})
+
+module.exports = $1
 endsnippet
