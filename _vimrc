@@ -1,7 +1,7 @@
 set nocompatible          "不要兼容vi
 filetype off              "必须的设置：
 
-"Color Settings {
+"Color Settings
 set colorcolumn=85           "彩色显示第85行
 set t_Co=256                 "设置256色显示
 set background=dark          "使用color solarized
@@ -11,15 +11,12 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 
-"}
-
-"tab setting {
+"tab setting
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
-"}
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set scrolloff=3
