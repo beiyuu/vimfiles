@@ -71,3 +71,20 @@ var ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basena
 
 module.exports = $1
 endsnippet
+
+
+snippet jqp "jquery plugin" b
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory)
+  } else if (typeof exports === 'object') {
+    factory(require('jquery'))
+  } else {
+    factory(jQuery)
+  }
+}(function ($) {
+  $.fn.$1 = function($2) {
+		$3
+  }
+}))
+endsnippet
