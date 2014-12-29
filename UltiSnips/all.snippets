@@ -73,6 +73,11 @@ module.exports = $1
 endsnippet
 
 
+snippet jq "jquery" b
+var $ = require('jquery')
+endsnippet
+
+
 snippet jqp "jquery plugin" b
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
@@ -85,6 +90,15 @@ snippet jqp "jquery plugin" b
 }(function ($) {
   $.fn.$1 = function($2) {
 		$3
+  }
+  $.hoverDelay = function(el, over, out, ms) {
+    var that = $(el)
+  }
+
+  $.fn.hoverDelay = function(over, out, ms){
+    return this.each(function(){
+      (new $.hoverDelay(this, over, out, ms))
+    })
   }
 }))
 endsnippet

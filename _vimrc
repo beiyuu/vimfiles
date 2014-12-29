@@ -7,6 +7,7 @@ set t_Co=256                 "设置256色显示
 set background=dark          "使用color solarized
 set cursorline               "设置光标高亮显示
 set cursorcolumn             "光标垂直高亮
+set mouse=a                  "鼠标滚动
 set ttyfast
 set ruler
 set backspace=indent,eol,start
