@@ -26,6 +26,12 @@ $('${1}').on('${2:event}', '${3:element}', function(e){
 })
 endsnippet
 
+snippet def
+<%def name="${1}()">
+	${2}
+</%def>
+endsnippet
+
 snippet bjs
 <%block filter="collect_js">
   ${1}
@@ -75,6 +81,10 @@ endsnippet
 
 snippet jq "jquery" b
 var $ = require('jquery')
+endsnippet
+
+snippet mo "mo" b
+@media $mobile
 endsnippet
 
 

@@ -28,7 +28,7 @@ set noswapfile
 set nowritebackup
 "set encoding=utf-8
 
-"set laststatus=2
+set laststatus=2
 "set number                                    "显示行号
 "set undofile                                  "无限undo
 "set nowrap                                    "禁止自动换行
@@ -80,6 +80,8 @@ vmap <tab> %
 nnoremap <leader>ft vatzf
 "使用,v来选择刚刚复制的段落，这样可以用来缩进
 nnoremap <leader>v v`]
+"不要进入vim的Ex模式，太2333了
+nnoremap Q <nop>
 
 "使用,w来垂直分割窗口，这样可以同时查看多个文件,如果想水平分割则<c-w>s
 nmap <leader>w <c-w>v<c-w>l
@@ -101,19 +103,21 @@ nmap <leader>h I//jj
 nmap <leader>ch ^xx
 "切换到当前目录
 nmap <leader>q :execute "cd" expand("%:h")<CR>
+nmap <leader>c :execute "cd ~/Code/solar"<CR>
 "搜索替换
 nmap <leader>s :1,%s///cg<left><left><left><left>
 
-"取消粘贴缩进
-nmap <leader>p :set paste<CR>
-nmap <leader>pp :set nopaste<CR>
+"系统剪切
+nmap <leader>y "+y
+vmap <leader>y "+y
+nmap <leader>p "+p
+vmap <leader>p "+p
 
 "文件类型切换
 nmap <leader>fj :set ft=javascript<CR>
 nmap <leader>fc :set ft=css<CR>
 nmap <leader>fh :set ft=html<CR>
 nmap <leader>fm :set ft=mako<CR>
-nmap <leader>fs :set ft=swig<CR>
 
 "设置隐藏gvim的菜单和工具栏 F2切换
 set guioptions-=m
@@ -139,7 +143,12 @@ Bundle "beiyuu/vim-bundle-mako"
 Bundle "ayang/AutoComplPop"
 Bundle "wavded/vim-stylus"
 Bundle "mxw/vim-jsx"
-Bundle "brettof86/vim-swigjs"
+Bundle "Valloric/MatchTagAlways"
+Bundle "kshenoy/vim-signature"
+Bundle "bling/vim-airline"
+
+Bundle "dyng/ctrlsf.vim"
+  nmap     <Leader>ff <Plug>CtrlSFPrompt
 
 Bundle 'junegunn/vim-easy-align'
   vmap <Enter> <Plug>(EasyAlign)
@@ -157,7 +166,9 @@ Bundle "ervandew/supertab"
 
 Bundle 'ctrlp.vim'
   let g:ctrlp_cmd = 'CtrlPMRU'
-  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|site_packages\|venv'
+  let g:ctrlp_working_path_mode = 'ra'
+  "let g:ctrlp_user_command = 'find %s -type f | grep -v "`cat .gitignore`"'
+  let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|site_packages\|venv\|jupiter\/static\|jupiter\/template'
 
 Bundle 'Lokaltog/vim-easymotion'
   let g:EasyMotion_smartcase = 0
@@ -186,18 +197,6 @@ Bundle 'UltiSnips'
   let g:UltiSnipsExpandTrigger="<c-j>"
   let g:UltiSnipsJumpForwardTrigger="<c-j>"
   let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-"Bundle 'FencView.vim'
-  "let g:fencview_autodetect=1
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'terryma/vim-multiple-cursors'
-"Bundle '_jsbeautify'
-  "nnoremap <leader>_ff :call g:Jsbeautify()<CR>
-"Bundle 'nathanaelkane/vim-indent-guides'
-  "let g:indent_guides_enable_on_vim_startup=1
-  "let g:indent_guides_guide_size=1
-
-"}
 
 "放置在Bundle的设置后，防止意外BUG
 filetype plugin indent on
