@@ -1,4 +1,4 @@
-#BeiYuu's Vimfiles
+# BeiYuu's Vimfiles
 
 使用Vundle，极轻极简的管理和配置Vim，使用只需以下简单几步操作：
 
