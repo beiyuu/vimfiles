@@ -49,6 +49,7 @@ set smartcase
 set incsearch
 set showmatch
 set hlsearch
+set vb t_vb= "取消报警音
 
 set numberwidth=4          "行号栏的宽度
 "set columns=135           "初始窗口的宽度
