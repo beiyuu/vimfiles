@@ -147,6 +147,7 @@ Bundle "mxw/vim-jsx"
 Bundle "Valloric/MatchTagAlways"
 Bundle "kshenoy/vim-signature"
 Bundle "bling/vim-airline"
+Bundle "digitaltoad/vim-jade.git"
 
 Bundle "dyng/ctrlsf.vim"
   nmap     <Leader>ff <Plug>CtrlSFPrompt
