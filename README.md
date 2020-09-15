@@ -1,5 +1,8 @@
 # BeiYuu's Vimfiles
 
+推荐使用Neovim，我的配置：https://github.com/beiyuu/nvim-config
+
+<del>
 使用Vundle，极轻极简的管理和配置Vim，使用只需以下简单几步操作：
 
 - 安装Vundle：`git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
@@ -9,6 +12,7 @@
 
 更多插件：http://vim-scripts.org/vim/scripts.html
 
-<del>我用了YouCompleteMe自动补全插件，有些麻烦，官方指南：http://valloric.github.com/YouCompleteMe/</del>
+我用了YouCompleteMe自动补全插件，有些麻烦，官方指南：http://valloric.github.com/YouCompleteMe/
 
 也可参考我的博客：[Git时代的VIM不完全使用教程](http://beiyuu.com/git-vim-tutorial/ "Git时代的VIM不完全使用教程")
+</del>
